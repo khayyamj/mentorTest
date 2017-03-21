@@ -1,28 +1,42 @@
 Answer each question in a written format
 
 1. What does semantic HTML mean?
+Semantic HTML means that html is written in a way that makes grammatical sense but is still rendered by the computer as a programming language.
 
 2. What is the box model?
+It is the idea that every element in html is contained within a defined box
 
 3. What is the difference between IDs and Classes?
+Both give specificity to an HTML element, however IDs are much more specific and should be unique because the styling of IDs will override styling of classes.
 
 4. What does the z-index do?
+It defines the relative position of elements on the screen move "towards" or "away" from the user. A higher index will render on top of a lower index element.
 
 5. Summarize what the keyword 'this' is used for?
+'this' is refers to the functional scope of an element.
 
 6. What is a callback?
+A callback is a function that is defined but not executed until it is called or activated by another function or user interaction.
 
 7. What is a closure?
+A closure is a function that is able to use the variable and functions of an outer function, especially in a callback.
 
 8. How does prototype work?
+Prototypes are functions that make functions. They are regularly used when creating programming elements.
 
 9. What is MVC?
+It is the programming model used by programming frameworks. It stands for Model-View-Controller.
 
 10. What is the component lifecycle?
+The component lifecycle are the steps that a component goes through in enter and leaving the DOM.
 
 11. What is REST?
+REST is a common way that http requests are processed on through the internet.
 
 12. Name three ways of getting data from the URL using express
+- parameters
+- queries
+- body
 
 create table users (
 id serial,
@@ -32,10 +46,10 @@ email varchar(255)
 
 12. Given the Schema above, write the following four basic CRUD db queries using postgres syntax
 
--Get all users:
+-Get all users: SELECT * FROM Users
 
--Create a new user with the name of 'your name' and an email of 'fake@fake.com':
+-Create a new user with the name of 'your name' and an email of 'fake@fake.com': INSERT INTO Users (name, email) VALUES ('your name','fake@fake.com')
 
--Update the newly created user's name to 'Bobby Boy':
+-Update the newly created user's name to 'Bobby Boy': UPDATE Users SET name = 'Bobby Boy' WHERE name = 'your name'
 
--Delete the newly updated user:
+-Delete the newly updated user: DELETE FROM Users WHERE name = 'Bobby Boy'
